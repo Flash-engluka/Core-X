@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Core X #1 — Undertale ver.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- 배경 별빛 Canvas -->
+  <canvas id="starfield"></canvas>
+
+  <!-- ============== 타이틀 화면 ============== -->
+  <section id="screen-title" class="screen active">
+    <div class="title-wrap">
+      <div class="title-heart">♥</div>
+      <h1 class="title-main">CORE&nbsp;X</h1>
+      <p class="title-sub">#1 — Undertale ver.</p>
+      <p class="title-hint">PRESS START</p>
+      <div class="title-buttons">
+        <button class="pixel-btn" data-action="goto-mode">START</button>
+        <button class="pixel-btn outline" data-action="goto-leaderboard">LEADERBOARD</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== 모드 선택 ============== -->
+  <section id="screen-mode" class="screen">
+    <div class="card">
+      <h2 class="screen-title">MODE</h2>
+      <div class="mode-grid">
+        <button class="mode-card" data-action="mode-local">
+          <span class="mode-emoji">🎮</span>
+          <span class="mode-name">LOCAL</span>
+          <span class="mode-desc">한 화면 4인 플레이</span>
+        </button>
+        <button class="mode-card disabled" data-action="mode-online">
+          <span class="mode-emoji">🌐</span>
+          <span class="mode-name">ONLINE</span>
+          <span class="mode-desc">Firebase 설정 필요</span>
+        </button>
+      </div>
+      <button class="pixel-btn small" data-action="back-
